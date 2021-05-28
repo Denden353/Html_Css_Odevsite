@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Kayit Ol</title>
+        <meta charset="utf-8" />
+        <style>
+        ul {
+     padding: 0;
+     margin: 0;
+     list-style-type: none;
+     background-color: #4fb99f;
+     overflow:auto;
+    }
+ 
+    ul li {
+     float:left;
+     border-bottom:3px solid #4fb99f;
+    }
+ 
+    ul li.menu-right{
+     float:right;
+    }
+ 
+    ul li a {
+     display: inline-block;
+     padding: 12px 24px;
+     text-decoration: none;
+     color: #fff;
+     font-size: 18px;
+    }
+ 
+    ul li.active {
+     background-color: #068587;
+     border-bottom:3px solid #f2b134;
+    }
+ 
+    ul li:hover:not(.active) {
+     background-color: #068587;
+     border-bottom:3px solid #f2b134;
+    }
+    
+    
+            body{
+                text-align: center;
+                background-image:url("pexels-lisa-1083822.jpg");
+                font-size:10px;
+                font-family:Trebuchet MS;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-attachment: fixed;
+                background-size: cover;
+
+                
+            }
+            #kayitFormu{
+                
+                border-radius:10px;
+                background:#ffffff;
+                width:360px;
+                margin:auto;
+                margin-top:100px;
+                padding:15px;
+                text-align:center;
+            }
+            input, button
+            {
+                border-radius:5px;
+                border:none;
+                width:300px;
+                height:50px;
+                margin:20px 0px 20px 0px;
+                background:rgba(240,240,240,.5);
+                padding-left:15px;
+                font-style:italic;
+                
+            }
+            
+            .btn{
+                background:#233e8b;
+                color:white;
+            }
+            h3{
+                color:#333;
+                text-transform:uppercase;
+                font-size:20px;
+            }
+            
+        </style>
+    </head>
+    <body><ul>
+        
+        <li class="menu-right">
+            <a href="KayitOl.html">Kayıt Ol</a>
+        </li>
+        <li class="menu-right">
+            <a href="Giris.html">Giriş</a>
+        </li>
+    </ul>
+
+        <div id="kayitFormu">
+            <form action="kayityap.php" method="get">
+                <h3>KULLANICI Kayıt Formu</h3>
+                <input type="text" name="adiniz" placeholder="Kullanıcı adı" required maxlength="6"  /> 
+                
+                <input type="email" name="eposta" placeholder="E-posta giriniz" required />
+                
+                <input type="password" name="parola" placeholder="Şifrenizi giriniz" required pattern="[0-9a-zA-Z]{5}"/>
+                
+                <input class="btn" type="submit" value="KAYIT OL" />
+            </form>
+            
+        </div>
+    
+    
+    </body>
+</html>
